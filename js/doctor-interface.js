@@ -1,14 +1,16 @@
-import { doctorSearch } from './../assets/js/doctorSearch.js';
+import { promise } from './../js/apicall.js';
 
 $(document).ready(function () {
    // jQuery Flavor dropdown
 $('#form').submit(function (event) {
+  event.preventDefault();
   debugger;
   let name = $('#name-form').val();
   let condition = $('#condition-form').val();
-  let search = doctorSearch(name, condition);
+  let apiCall = promise(name, condition);
 
-  search.then(function (response) {
+  apiCall.then(function (response) {
+
   		let body = JSON.parse(response);
       console.log(body);
   	}, function (error) {
