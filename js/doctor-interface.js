@@ -12,7 +12,7 @@ $('#form').submit(function (event) {
   apiCall.then(function (response) {
 
   		let body = JSON.parse(response);
-      console.log(body);
+      $('#results').append(body.data.profile.last_name)
   	}, function (error) {
   		$('.showErrors').text(`There was an error processing your request: ${error.message}`);
     });
