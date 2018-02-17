@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(211, 211, 211);
+}
+
+
+#results {
+  width: 13rem;
+  margin-left: 400px;
+  margin-bottom: 20px;
+  background-color: rgb(211, 211, 211);
+}
+
+
+card {
+  border-style: solid;
+  border-width: 20px;
+}
+
+.card-block{
+  background-color: rgba(36, 121, 239, 0.4);
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+}
+
+.card-img-top{
+  width: 12.75rem;
+  height: 10rem;
+}
+
+.card-title {
+  padding: 5px;
+  margin: 5px;
+}
+
+.card-text {
+  padding 5px;
+  margin: 5px;
+}
