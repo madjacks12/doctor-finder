@@ -42,8 +42,10 @@ $('#form').submit(function (event) {
 
         $(`#card-block3${i}`).append($(`<p class="card-text" id=card-text1${i}></p>`).append("Currently Accepting new patients: " + body.data[i].practices[0].accepts_new_patients));
       }
+
       }, function (error) {
   		$('.showErrors').text(`There was an error processing your request: ${error.message}`);
     });
+    $("#results").empty();
   });
 });
