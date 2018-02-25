@@ -2,7 +2,7 @@
 #### _By Matthew Jackson, 2/16/2018_
 
 This webpage finds doctors in the Portland, OR area that work with an issue the user specifies. The user can also lookup doctors by name. This app uses the Better Doctor API to locate doctors based on user input.
-**Important**
+**Important** <br  />
 The API key is stored in a .env folder not pushed to Github. to use this app, you must get your own API from Better Doctor here: https://developer.betterdoctor.com/ and include your API key in a .env file stored in the top level of the project directory.
 
 ## Getting Started
